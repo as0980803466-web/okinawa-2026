@@ -13,192 +13,34 @@
             --sky-blue: #BFEAF2;
             --text-brown: #5D4037;
         }
-
-        * {
-            font-family: "Noto Sans TC", sans-serif;
-            -webkit-tap-highlight-color: transparent;
-        }
-
-        body {
-            background-color: var(--soft-yellow);
-            color: var(--text-brown);
-            margin: 0;
-            padding: 0;
-        }
-
-        .main-header {
-            text-align: center;
-            padding: 25px 10px;
-        }
-
-        .main-header-title {
-            font-weight: 900;
-            color: #4A5568;
-            font-size: clamp(1rem, 5.5vw, 2.1rem); 
-            white-space: nowrap;
-            letter-spacing: -0.01em;
-            display: inline-block;
-        }
-
-        .card {
-            background: white;
-            border-radius: 24px;
-            box-shadow: 0 8px 20px -5px rgba(0,0,0,0.05);
-            overflow: hidden;
-            margin-bottom: 20px;
-            border: 1px solid rgba(0,0,0,0.02);
-        }
-
-        .img-hero {
-            width: 100%;
-            height: 140px; 
-            object-fit: cover;
-            background-color: #eee;
-        }
-
-        /* 強化後的連結卡片樣式 */
-        .link-card {
-            display: flex;
-            align-items: center;
-            background: #F7FAFC;
-            border: 1px solid #E2E8F0;
-            border-radius: 16px;
-            padding: 12px;
-            text-decoration: none !important;
-            color: inherit !important;
-            margin-top: 10px;
-            transition: all 0.2s ease;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        .link-card:active {
-            transform: scale(0.97);
-            background: #EDF2F7;
-        }
-
-        .link-card .icon-circle {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 12px;
-            font-size: 1.2rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            flex-shrink: 0;
-        }
-
-        .link-card .name {
-            font-weight: 700;
-            font-size: 0.85rem;
-            line-height: 1.2;
-        }
-
-        .link-card .rating {
-            font-size: 0.75rem;
-            color: #F6AD55;
-            font-weight: bold;
-            display: block;
-            margin-top: 2px;
-        }
-
-        .tab-active {
-            background-color: var(--primary-pink) !important;
-            color: white !important;
-            box-shadow: 0 4px 10px rgba(255, 183, 197, 0.4);
-        }
-
-        .day-section {
-            display: none;
-        }
-        .day-section.active {
-            display: block;
-            animation: fadeIn 0.3s ease-out;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .weather-banner {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: white;
-            padding: 6px 18px;
-            border-radius: 50px;
-            margin-bottom: 15px;
-            font-size: 0.85rem;
-            font-weight: 900;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            color: #4A5568;
-        }
-
-        .info-box {
-            background: #F0FFF4;
-            border-left: 5px solid #48BB78;
-            padding: 15px;
-            border-radius: 0 20px 20px 0;
-            margin-top: 15px;
-            font-size: 0.8rem;
-        }
-
-        .alert-box {
-            background: #FFF5F5;
-            border-left: 5px solid #F56565;
-            padding: 15px;
-            border-radius: 0 20px 20px 0;
-            margin-top: 15px;
-            font-size: 0.8rem;
-        }
-
-        .shop-chip {
-            display: inline-block;
-            background: #EDF2F7;
-            padding: 4px 10px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            margin: 2px;
-            font-weight: 700;
-        }
-        
+        * { font-family: "Noto Sans TC", sans-serif; -webkit-tap-highlight-color: transparent; }
+        body { background-color: var(--soft-yellow); color: var(--text-brown); margin: 0; padding: 0; }
+        .main-header-title { font-weight: 900; color: #4A5568; font-size: clamp(1rem, 5.5vw, 2.1rem); white-space: nowrap; letter-spacing: -0.01em; display: inline-block; }
+        .card { background: white; border-radius: 24px; box-shadow: 0 8px 20px -5px rgba(0,0,0,0.05); overflow: hidden; margin-bottom: 20px; border: 1px solid rgba(0,0,0,0.02); }
+        .img-hero { width: 100%; height: 140px; object-fit: cover; background-color: #eee; }
+        .link-card { display: flex; align-items: center; background: #F7FAFC; border: 1px solid #E2E8F0; border-radius: 16px; padding: 12px; text-decoration: none !important; color: inherit !important; margin-top: 10px; transition: all 0.2s ease; cursor: pointer; width: 100%; }
+        .link-card:active { transform: scale(0.97); background: #EDF2F7; }
+        .link-card .icon-circle { width: 40px; height: 40px; border-radius: 50%; background: white; display: flex; align-items: center; justify-content: center; margin-right: 12px; font-size: 1.2rem; box-shadow: 0 2px 5px rgba(0,0,0,0.05); flex-shrink: 0; }
+        .link-card .name { font-weight: 700; font-size: 0.85rem; line-height: 1.2; }
+        .link-card .rating { font-size: 0.75rem; color: #F6AD55; font-weight: bold; display: block; margin-top: 2px; }
+        .tab-active { background-color: var(--primary-pink) !important; color: white !important; box-shadow: 0 4px 10px rgba(255, 183, 197, 0.4); }
+        .day-section { display: none; }
+        .day-section.active { display: block; animation: fadeIn 0.3s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .weather-banner { display: inline-flex; align-items: center; gap: 8px; background: white; padding: 6px 18px; border-radius: 50px; margin-bottom: 15px; font-size: 0.85rem; font-weight: 900; box-shadow: 0 2px 8px rgba(0,0,0,0.05); color: #4A5568; }
+        .info-box { background: #F0FFF4; border-left: 5px solid #48BB78; padding: 15px; border-radius: 0 20px 20px 0; margin-top: 15px; font-size: 0.8rem; }
+        .alert-box { background: #FFF5F5; border-left: 5px solid #F56565; padding: 15px; border-radius: 0 20px 20px 0; margin-top: 15px; font-size: 0.8rem; }
+        .shop-chip { display: inline-block; background: #EDF2F7; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; margin: 2px; font-weight: 700; }
+        .bottom-link-btn { display: inline-flex; align-items: center; justify-content: center; background: white; border: 1px solid #E2E8F0; padding: 10px 18px; border-radius: 14px; font-size: 10px; font-weight: 800; color: #4A5568; box-shadow: 0 2px 5px rgba(0,0,0,0.05); text-decoration: none !important; transition: all 0.2s ease; }
+        .bottom-link-btn:active { background: #EDF2F7; transform: scale(0.95); }
         .no-scrollbar::-webkit-scrollbar { display: none; }
-
-        /* 優化懶人包按鈕 */
-        .bottom-link-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background: white;
-            border: 1px solid #E2E8F0;
-            padding: 10px 18px;
-            border-radius: 14px;
-            font-size: 10px;
-            font-weight: 800;
-            color: #4A5568;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            text-decoration: none !important;
-            transition: all 0.2s ease;
-        }
-
-        .bottom-link-btn:active {
-            background: #EDF2F7;
-            transform: scale(0.95);
-        }
     </style>
 </head>
 <body class="pb-24">
-
-    <!-- 頂部標題 -->
-    <header class="main-header">
+    <header class="text-center py-8">
         <h1 class="main-header-title">鄭寶寶 2026 沖繩之旅</h1>
     </header>
 
-    <!-- 日期導覽 -->
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md py-3 shadow-sm border-b overflow-x-auto no-scrollbar">
         <div class="flex space-x-2 px-5 md:justify-center min-w-max">
             <button onclick="showDay(1)" id="btn-1" class="date-btn px-6 py-2 rounded-full border border-pink-50 bg-white font-bold text-gray-400 text-xs transition-all">4/16 四</button>
@@ -210,260 +52,97 @@
     </nav>
 
     <main class="max-w-xl mx-auto px-5 mt-6">
-
         <!-- Day 1 -->
         <div id="day-1" class="day-section">
             <div class="weather-banner">☀️ 4/16 晴朗 · 24°C / 19°C</div>
             <h2 class="text-xl font-black text-pink-500 mb-6">Day 1 · 那霸抵達 🛫</h2>
-            
-            <div class="card">
-                <div class="p-6">
-                    <h3 class="font-bold text-lg mb-4 flex items-center gap-2"><span>✈️</span> 交通與接送資訊</h3>
-                    <div class="space-y-4">
-                        <div class="bg-blue-50 p-4 rounded-2xl">
-                            <p class="text-xs font-bold text-blue-600 mb-1">10:50 出發</p>
-                            <p class="font-bold">家門口接送 ➔ 台中清泉崗 (RMQ)</p>
-                        </div>
-                        <div class="border-2 border-dashed border-gray-100 p-4 rounded-2xl text-center bg-gray-50/30">
-                            <p class="text-xs font-bold text-gray-400 mb-1 uppercase tracking-widest">Tigerair IT268</p>
-                            <div class="flex justify-between items-center px-4">
-                                <div><p class="text-xl font-black">RMQ</p><p class="text-xs">13:50</p></div>
-                                <div class="flex-1 px-4 h-[1px] bg-gray-200 relative"><span class="absolute top-[-10px] left-[50%] translate-x-[-50%] text-sm">✈️</span></div>
-                                <div><p class="text-xl font-black">OKA</p><p class="text-xs">16:30</p></div>
-                            </div>
-                        </div>
-                        <div class="bg-yellow-50 p-4 rounded-2xl">
-                            <p class="text-xs font-bold text-yellow-600 mb-1">16:00 租車送達</p>
-                            <p class="font-bold text-sm mb-2">車輛送至：西鐵度假村飯店</p>
-                            <a href="https://maps.app.goo.gl/8mvivdpz8KUVEFoC6?g_st=com.google.maps.preview.copy" target="_blank" class="link-card">
-                                <div class="icon-circle">🏨</div>
-                                <div class="content"><span class="name">Nishitetsu Resort Inn Naha (西鐵度假村飯店)</span><span class="rating">點擊開啟導航</span></div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="info-box">
-                        <p class="font-bold text-green-700">🚗 租車注意事項</p>
-                        <ul class="list-disc list-inside mt-1 space-y-1 text-green-800">
-                            <li>準備台灣駕照正本 + 日文譯本。</li>
-                            <li>領車時務必繞車一圈檢查外觀並拍照。</li>
-                            <li>日本靠左行駛，「左小右大」轉彎。</li>
-                        </ul>
-                    </div>
+            <div class="card"><div class="p-6"><h3 class="font-bold text-lg mb-4 flex items-center gap-2"><span>✈️</span> 交通與接送</h3>
+                <div class="space-y-4">
+                    <div class="bg-blue-50 p-4 rounded-2xl"><p class="text-xs font-bold text-blue-600 mb-1">10:50 出發</p><p class="font-bold">機場接送 ➔ 台中清泉崗 (RMQ)</p></div>
+                    <div class="border-2 border-dashed border-gray-100 p-4 rounded-2xl text-center bg-gray-50/30"><p class="text-xs font-bold text-gray-400 mb-1 uppercase tracking-widest">IT268 (13:50-16:30)</p></div>
+                    <div class="bg-yellow-50 p-4 rounded-2xl"><p class="text-xs font-bold text-yellow-600 mb-1">16:00 租車送達</p>
+                    <a href="https://maps.app.goo.gl/8mvivdpz8KUVEFoC6?g_st=com.google.maps.preview.copy" target="_blank" class="link-card"><div class="icon-circle">🏨</div><div class="content"><span class="name">西鐵度假村飯店</span><span class="rating">點擊開啟導航</span></div></a></div>
                 </div>
-            </div>
-
-            <div class="card">
-                <img src="uploaded:image.png-246f2699-7867-47a0-be2a-75bdaaa2c50b" class="img-hero" alt="">
-                <div class="p-6">
-                    <h3 class="font-bold text-lg mb-4 flex items-center gap-2"><span>🌙</span> 國際通美食採買</h3>
-                    <div class="space-y-3">
-                        <a href="https://maps.app.goo.gl/DbcRzYftzVDLrHEYA?g_st=ic" target="_blank" class="link-card">
-                            <div class="icon-circle">🍺</div>
-                            <div class="content"><span class="name">Kazuki 居酒屋</span><span class="rating">★ 4.2 (197)</span></div>
-                        </a>
-                        <a href="https://maps.app.goo.gl/ad9b1bB3iyhMdEeE6?g_st=ic" target="_blank" class="link-card">
-                            <div class="icon-circle">💊</div>
-                            <div class="content"><span class="name">Drug Eleven 藥妝店</span><span class="rating">沖繩熱門藥妝採買</span></div>
-                        </a>
-                        <a href="https://maps.app.goo.gl/c1m2aLdwxDMWYej9A?g_st=ic" target="_blank" class="link-card">
-                            <div class="icon-circle">🏪</div>
-                            <div class="content"><span class="name">24hrs 超商 (MaxValu 牧志店)</span><span class="rating">宵夜補給站</span></div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+                <div class="info-box"><p class="font-bold text-green-700">🚗 租車注意事項</p><p class="text-xs mt-1">需駕照+譯本；領車拍照；靠左行駛。</p></div>
+            </div></div>
+            <div class="card"><img src="kokusai.webp" class="img-hero" alt="[國際通]"><div class="p-6"><h3 class="font-bold text-lg mb-4 flex items-center gap-2"><span>🌙</span> 國際通美食採買</h3><div class="space-y-3">
+                <a href="https://maps.app.goo.gl/DbcRzYftzVDLrHEYA?g_st=ic" target="_blank" class="link-card"><div class="icon-circle">🍺</div><div class="content"><span class="name">Kazuki 居酒屋 ★ 4.2</span></div></a>
+                <a href="https://maps.app.goo.gl/ad9b1bB3iyhMdEeE6?g_st=ic" target="_blank" class="link-card"><div class="icon-circle">💊</div><div class="content"><span class="name">Drug Eleven 藥妝店</span></div></a>
+                <a href="https://maps.app.goo.gl/c1m2aLdwxDMWYej9A?g_st=ic" target="_blank" class="link-card"><div class="icon-circle">🏪</div><div class="content"><span class="name">24hrs超商 (MaxValu)</span></div></a>
+            </div></div></div>
         </div>
 
         <!-- Day 2 -->
         <div id="day-2" class="day-section">
             <div class="weather-banner">☁️ 4/17 多雲 · 23°C / 20°C</div>
-            <h2 class="text-xl font-black text-pink-500 mb-6">Day 2 · 海洋盛典與跨海之旅 🐋</h2>
-            
-            <div class="card">
-                <div class="p-6">
-                    <h3 class="text-lg font-bold text-blue-600 mb-4">美麗海水族館攻略</h3>
-                    <div class="alert-box">
-                        <p class="font-bold text-red-600">⚠️ 購物退稅提醒</p>
-                        <p class="mt-1">館內紀念品不退稅！請留到<strong>國際通上的專賣店</strong>買才享有免稅！</p>
-                    </div>
-                    <div class="info-box">
-                        <p class="font-bold text-green-700">📅 表演演出清單</p>
-                        <p class="mt-2 font-bold text-xs">🐬 海豚秀 (Okichan)：</p>
-                        <p class="text-[11px]">10:30 / 11:30 / 13:00 / 15:00 / 17:00</p>
-                        <p class="mt-2 font-bold text-xs">🦈 餵食秀：</p>
-                        <p class="text-[11px]">09:30 (鬼蝠魟) / 15:00 / 17:00 (鯨鯊垂直站立)</p>
-                    </div>
-                    <p class="mt-6 font-bold text-sm">📍 本部町餐廳連結：</p>
-                    <div class="space-y-3">
-                        <a href="https://maps.app.goo.gl/xg14hyh7asPWGpRB7?g_st=ic" target="_blank" class="link-card">
-                            <div class="icon-circle">🍣</div>
-                            <div class="content"><span class="name">Kaihomaru 2nd 海鮮餐廳</span><span class="rating">★ 4.3 (326)</span></div>
-                        </a>
-                        <a href="https://maps.app.goo.gl/C9Pg9HaWZvyR9tKf8?g_st=ic" target="_blank" class="link-card">
-                            <div class="icon-circle">🍛</div>
-                            <div class="content"><span class="name">Kairo 餐廳</span><span class="rating">★ 4.3 (494)</span></div>
-                        </a>
-                        <a href="https://maps.app.goo.gl/cDzL6o5ahVLd5HmV9?g_st=ic" target="_blank" class="link-card">
-                            <div class="icon-circle">🍱</div>
-                            <div class="content"><span class="name">Fukugiya 定食食堂</span><span class="rating">★ 4.4 (407)</span></div>
-                        </a>
-                    </div>
+            <h2 class="text-xl font-black text-pink-500 mb-6">Day 2 · 海洋盛典 🐋</h2>
+            <div class="card"><div class="p-6"><h3 class="text-lg font-bold text-blue-600 mb-4">美麗海水族館攻略</h3>
+                <div class="alert-box"><p class="font-bold text-red-600">⚠️ 購物退稅提醒：館內不退稅，請到國際通買。</p></div>
+                <div class="info-box"><p class="font-bold text-green-700">📅 表演時間</p><p class="text-[11px]">🐬 海豚秀：10:30起五場；🦈 餵食秀：09:30 / 15:00 / 17:00</p></div>
+                <div class="space-y-2 mt-4">
+                    <a href="https://maps.app.goo.gl/xg14hyh7asPWGpRB7?g_st=ic" target="_blank" class="link-card"><div class="content"><span class="name">Kaihomaru 2nd 海鮮餐廳 (4.3★)</span></div></a>
+                    <a href="https://maps.app.goo.gl/C9Pg9HaWZvyR9tKf8?g_st=ic" target="_blank" class="link-card"><div class="content"><span class="name">Kairo 餐廳 (4.3★)</span></div></a>
+                    <a href="https://maps.app.goo.gl/cDzL6o5ahVLd5HmV9?g_st=ic" target="_blank" class="link-card"><div class="content"><span class="name">Fukugiya 定食食堂 (4.4★)</span></div></a>
                 </div>
-            </div>
-
-            <div class="card">
-                <img src="uploaded:image.png-d13439a8-4ebe-4e29-ab37-3b7f0e068716" class="img-hero" alt="">
-                <div class="p-6">
-                    <h3 class="font-bold text-lg mb-4 text-blue-600">古宇利島 · 跨海冒險</h3>
-                    <div class="space-y-3">
-                        <a href="https://maps.app.goo.gl/atxLavsBwFxfwqTC7?g_st=ic" target="_blank" class="link-card">
-                            <div class="icon-circle">☕</div>
-                            <div class="content"><span class="name">黑糖咖啡 (Shinmei Coffee)</span><span class="rating">在地美味咖啡推薦</span></div>
-                        </a>
-                        <div class="grid grid-cols-2 gap-2">
-                            <a href="https://maps.app.goo.gl/2Jw1iwoCaDLyVGdg6?g_st=ic" target="_blank" class="link-card mt-0 p-2 text-center">
-                                <div class="content"><span class="name text-[10px]">Gajumaru Rock (4.8★)</span></div>
-                            </a>
-                            <a href="https://maps.app.goo.gl/AV4VoYbmJ2nnP3Lk7?g_st=ic" target="_blank" class="link-card mt-0 p-2 text-center">
-                                <div class="content"><span class="name text-[10px]">Airando Fiji (4.8★)</span></div>
-                            </a>
-                        </div>
-                        <div class="bg-blue-50 p-4 rounded-2xl mt-4">
-                            <p class="font-bold text-blue-700 text-xs">逛 RYUBO 百貨 & 國際通</p>
-                            <p class="text-[10px] text-blue-500 mt-1">🚩 安利美特聖地 / 淳久堂 B1 免稅</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div></div>
+            <div class="card"><img src="kouuri.webp" class="img-hero" alt="[古宇利大橋]"><div class="p-6"><h3 class="font-bold text-lg mb-4 text-blue-600">古宇利島 · 跨海冒險</h3><div class="space-y-3">
+                <a href="https://maps.app.goo.gl/atxLavsBwFxfwqTC7?g_st=ic" target="_blank" class="link-card"><div class="icon-circle">☕</div><div class="content"><span class="name">黑糖咖啡 (Shinmei Coffee)</span></div></a>
+                <div class="grid grid-cols-2 gap-2"><a href="https://maps.app.goo.gl/2Jw1iwoCaDLyVGdg6?g_st=ic" target="_blank" class="link-card mt-0 p-2 text-center"><span class="name text-[10px]">Gajumaru Rock</span></a><a href="https://maps.app.goo.gl/AV4VoYbmJ2nnP3Lk7?g_st=ic" target="_blank" class="link-card mt-0 p-2 text-center"><span class="name text-[10px]">Airando Fiji</span></a></div>
+            </div></div></div>
         </div>
 
         <!-- Day 3 -->
         <div id="day-3" class="day-section">
-            <div class="weather-banner">🌤️ 4/18 晴時多雲 · 25°C / 21°C</div>
-            <h2 class="text-xl font-black text-pink-500 mb-6">Day 3 · 美國村與購物攻略 🛍️</h2>
-            
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?q=80&w=800&auto=format&fit=crop" class="img-hero" alt="">
-                <div class="p-6">
-                    <h3 class="font-bold text-lg mb-4 flex items-center gap-2"><span>🎡</span> 美國村美食與咖啡</h3>
-                    <div class="space-y-3">
-                        <a href="https://maps.app.goo.gl/26cKc4sQDAbNKfH86?g_st=ic" target="_blank" class="link-card">
-                            <div class="icon-circle">🥞</div>
-                            <div class="content"><span class="name">Hanon 咖啡店 (舒芙蕾鬆餅)</span><span class="rating">★ 4.6 (837)</span></div>
-                        </a>
-                        <a href="https://maps.app.goo.gl/ztTQ6erQQ9RMVgRW8?g_st=ic" target="_blank" class="link-card">
-                            <div class="icon-circle">🌮</div>
-                            <div class="content"><span class="name">Kijimuna 塔可飯</span><span class="rating">★ 4.3 (735)</span></div>
-                        </a>
-                    </div>
+            <div class="weather-badge">🌤️ 4/18 晴時多雲 · 25°C / 21°C</div>
+            <h2 class="text-xl font-black text-pink-500 mb-6">Day 3 · 美國村與購物 🛍️</h2>
+            <div class="card"><img src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?q=80&w=800&auto=format&fit=crop" class="img-hero" alt="美國村"><div class="p-6">
+                <a href="https://maps.app.goo.gl/26cKc4sQDAbNKfH86?g_st=ic" target="_blank" class="link-card"><div class="icon-circle">🥞</div><div class="content"><span class="name">Hanon 咖啡店 (舒芙蕾)</span></div></a>
+                <a href="https://maps.app.goo.gl/ztTQ6erQQ9RMVgRW8?g_st=ic" target="_blank" class="link-card"><div class="icon-circle">🌮</div><div class="content"><span class="name">Kijimuna 塔可飯</span></div></a>
+            </div></div>
+            <div class="card"><div class="p-6"><h3 class="font-bold text-lg mb-4">🛍️ Parco City 購物專櫃</h3><div class="flex flex-wrap gap-1 mb-4"><span class="shop-chip">寶可夢中心</span><span class="shop-chip">UNIQLO</span><span class="shop-chip">GU</span><span class="shop-chip">Sanrio</span></div>
+                <div class="bg-red-50 p-5 rounded-2xl border-2 border-red-100">
+                    <h4 class="font-bold text-red-700 mb-3 text-sm">🥩 18:45 重點晚餐</h4>
+                    <a href="https://maps.app.goo.gl/cXb5Ja8NPPRDjdU68?g_st=ic" target="_blank" class="link-card bg-white mt-0 shadow-sm"><div class="icon-circle text-red-500">🔥</div><div class="content"><span class="name">燒肉本部牧場 (4.8★)</span></div></a>
                 </div>
-            </div>
-
-            <div class="card">
-                <div class="p-6">
-                    <h3 class="font-bold text-lg mb-4">🛍️ Parco City 購物指南</h3>
-                    <div class="bg-gray-50 p-4 rounded-2xl mb-4">
-                        <p class="font-bold text-xs mb-2">⭐ 必逛櫃位推薦：</p>
-                        <div class="flex flex-wrap gap-1 mb-4">
-                            <span class="shop-chip">寶可夢中心</span><span class="shop-chip">UNIQLO</span><span class="shop-chip">GU</span><span class="shop-chip">Sanrio</span>
-                        </div>
-                        <p class="font-bold text-xs text-pink-500 mb-1">🍬 伴手禮：</p>
-                        <p class="text-[10px] text-gray-500">御菓子御殿、福木屋年輪蛋糕</p>
-                    </div>
-                    <div class="bg-red-50 p-5 rounded-2xl border-2 border-red-100">
-                        <h4 class="font-bold text-red-700 mb-3 text-sm">🥩 18:45 重點晚餐</h4>
-                        <a href="https://maps.app.goo.gl/cXb5Ja8NPPRDjdU68?g_st=ic" target="_blank" class="link-card bg-white mt-0 shadow-sm">
-                            <div class="icon-circle text-red-500">🔥</div>
-                            <div class="content"><span class="name">燒肉本部牧場 (國際通店)</span><span class="rating">★ 4.8 (1513)</span></div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            </div></div>
         </div>
 
         <!-- Day 4 -->
         <div id="day-4" class="day-section">
-            <div class="weather-banner">☀️ 4/19 晴天 · 26°C / 22°C</div>
-            <h2 class="text-xl font-black text-pink-500 mb-6">Day 4 · 親子樂園與 AEON 🎢</h2>
-            
-            <div class="card">
-                <img src="uploaded:image.png-dbaf1a0e-b005-4327-a304-6d592f398f04" class="img-hero" alt="">
-                <div class="p-6">
-                    <h3 class="font-bold text-lg mb-4">🍳 早餐地標 09:30</h3>
-                    <a href="https://maps.app.goo.gl/zgfwNqukPzFKhGee9?g_st=ic" target="_blank" class="link-card">
-                        <div class="icon-circle">🍚</div>
-                        <div class="content"><span class="name">Uotalo the 餐廳</span><span class="rating">★ 4.8 (118)</span></div>
-                    </a>
-                    <div class="info-box mt-6">
-                        <p class="font-bold text-green-700">🦁 兒童王國指南</p>
-                        <p class="mt-1">預約餵食體驗；神奇博物館室內避暑首選。</p>
-                    </div>
-                    <div class="poi-box bg-yellow-50 p-4 rounded-xl mt-4">
-                        <p class="font-bold text-yellow-800 text-sm">永旺夢樂城 (AEON Mall Rycom)</p>
-                        <p class="text-[10px] text-yellow-600 mt-1">全沖繩最大百貨！記得領外國遊客折扣。</p>
-                    </div>
-                    <div class="mt-8">
-                        <h4 class="font-bold text-orange-700 mb-3 text-sm">🥘 19:00 阿古豬晚餐</h4>
-                        <a href="https://maps.app.goo.gl/wMUntn5WGfBZqUpr9?g_st=ic" target="_blank" class="link-card">
-                            <div class="icon-circle">🐷</div>
-                            <div class="content"><span class="name">島豚屋 (阿古豬料理)</span><span class="rating">★ 4.6 (1269)</span></div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <div class="weather-badge">☀️ 4/19 晴天 · 26°C / 22°C</div>
+            <h2 class="text-xl font-black text-pink-500 mb-6">Day 4 · 親子樂園 🎢</h2>
+            <div class="card"><img src="zoo.webp" class="img-hero" alt="[兒童王國]"><div class="p-6">
+                <a href="https://maps.app.goo.gl/zgfwNqukPzFKhGee9?g_st=ic" target="_blank" class="link-card mb-4"><div class="icon-circle">🍚</div><div class="content"><span class="name">Uotalo the 餐廳 (早餐)</span></div></a>
+                <div class="info-box"><p class="font-bold text-green-700">🦁 兒童王國指南</p><p class="text-xs">預約餵食體驗；神奇博物館室內避暑首選。</p></div>
+                <div class="poi-box bg-yellow-50 p-4 rounded-xl mt-4"><p class="font-bold text-yellow-800 text-sm">永旺夢樂城 (AEON Rycom)</p></div>
+                <a href="https://maps.app.goo.gl/wMUntn5WGfBZqUpr9?g_st=ic" target="_blank" class="link-card mt-8"><div class="icon-circle">🐷</div><div class="content"><span class="name">島豚屋 (阿古豬晚餐)</span></div></a>
+            </div></div>
         </div>
 
         <!-- Day 5 -->
         <div id="day-5" class="day-section">
             <div class="weather-badge">☀️ 4/20 晴朗 · 27°C / 23°C</div>
-            <h2 class="text-xl font-black text-pink-500 mb-6">Day 5 · 首里回歸與歸途 🏯</h2>
-            <div class="card">
-                <div class="p-6">
-                    <h3 class="font-bold text-lg mb-4 flex items-center gap-2"><span>⛩️</span> 首里散策與午餐</h3>
-                    <div class="space-y-3">
-                        <a href="https://maps.app.goo.gl/AetmpVWAz41hN5QG6?g_st=ic" target="_blank" class="link-card">
-                            <div class="icon-circle">🕊️</div>
-                            <div class="content"><span class="name">西來院 (達摩寺)</span><span class="rating">★ 4.5 (989)</span></div>
-                        </a>
-                        <a href="https://maps.app.goo.gl/RuxyWQ9wTLwupM9w7?g_st=ic" target="_blank" class="link-card">
-                            <div class="icon-circle">🍜</div>
-                            <div class="content"><span class="name">うかじそば (首里沖繩麵)</span><span class="rating">在地美味推薦</span></div>
-                        </a>
-                    </div>
-                    <hr class="my-8 border-gray-100">
-                    <div class="p-5 bg-blue-50 rounded-2xl border-l-4 border-blue-400">
-                        <p class="font-bold text-blue-700">▫️ 瀨長島 & 幸福鬆餅</p>
-                        <p class="text-[10px] text-blue-500 mt-1">賞機看海，最後的海邊放鬆時刻。</p>
-                    </div>
-                    <div class="grid grid-cols-2 gap-3 mt-4 text-center">
-                        <div class="bg-gray-50 p-4 rounded-xl font-bold text-xs">漫畫倉庫</div>
-                        <div class="bg-gray-50 p-4 rounded-xl font-bold text-xs">德利麵包店</div>
-                    </div>
-                </div>
-            </div>
+            <h2 class="text-xl font-black text-pink-500 mb-6">Day 5 · 歸途 🏯</h2>
+            <div class="card"><div class="p-6">
+                <a href="https://maps.app.goo.gl/AetmpVWAz41hN5QG6?g_st=ic" target="_blank" class="link-card"><div class="icon-circle">🕊️</div><div class="content"><span class="name">西來院 (達摩寺) ★ 4.5</span></div></a>
+                <a href="https://maps.app.goo.gl/RuxyWQ9wTLwupM9w7?g_st=ic" target="_blank" class="link-card"><div class="icon-circle">🍜</div><div class="content"><span class="name">うかじそば (首里沖繩麵)</span></div></a>
+                <hr class="my-8 border-gray-100">
+                <div class="p-5 bg-blue-50 rounded-2xl border-l-4 border-blue-400"><p class="font-bold text-blue-700 text-sm">▫️ 瀨長島 & 幸福鬆餅</p></div>
+            </div></div>
         </div>
 
-        <!-- 懶人包區塊 (修復連結與內容優化) -->
-        <div class="mt-4 py-8 border-t border-gray-200 text-center">
-            <h3 class="font-bold text-gray-400 mb-6 tracking-widest text-[10px] uppercase">🔗 全方位旅遊實用連結</h3>
+        <!-- 懶人包 -->
+        <div class="mt-4 py-8 border-t border-gray-200 text-center"><h3 class="font-bold text-gray-400 mb-6 tracking-widest text-[10px] uppercase">🔗 實用連結</h3>
             <div class="flex flex-wrap justify-center gap-3">
-                <a href="https://churaumi.okinawa/sp/tc/guide/hour/" target="_blank" class="bottom-link-btn">
-                    🕐 營業時間
-                </a>
-                <a href="https://oki-park.jp/userfiles/files/pdf/inst/181120_tc_pamphleta-map.pdf" target="_blank" class="bottom-link-btn">
-                    🗺️ 園區地圖
-                </a>
-                <a href="https://churaumi.okinawa/sp/tc/program/aquarium/kuroshio/" target="_blank" class="bottom-link-btn">
-                    🦈 餵食秀詳情
-                </a>
+                <a href="https://churaumi.okinawa/sp/tc/guide/hour/" target="_blank" class="bottom-link-btn">🕐 營業時間</a>
+                <a href="https://oki-park.jp/userfiles/files/pdf/inst/181120_tc_pamphleta-map.pdf" target="_blank" class="bottom-link-btn">🗺️ 園區地圖</a>
+                <a href="https://churaumi.okinawa/sp/tc/program/aquarium/kuroshio/" target="_blank" class="bottom-link-btn">🦈 餵食秀詳情</a>
             </div>
         </div>
-
     </main>
 
     <script>
         window.onload = function() { showDay(1); };
-
         function showDay(dayNum) {
             document.querySelectorAll('.day-section').forEach(s => s.classList.remove('active'));
             document.querySelectorAll('.date-btn').forEach(b => b.classList.remove('tab-active'));
